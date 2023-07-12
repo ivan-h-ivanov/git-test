@@ -1,0 +1,11 @@
+echo "file1 is theirs" > file1
+echo "this is file2" > file2
+git add .
+git commit -m File2
+git push
+git reset --hard head~1
+echo "file1 is ours" > file1
+echo "this is file3" > file3
+git add .
+git commit -m File3
+git graph

@@ -1,0 +1,17 @@
+git switch -c feature
+echo "stable" >> file2
+git add .
+git commit -m "stable 1"
+echo "experimental" >> file3
+git add .
+git commit -m "experimental"
+echo "stable" >> file4
+git add .
+git commit -m "stable 2"
+git push --set-upstream origin feature
+git switch master
+echo "This is File 1 updated" >> File1
+git add .
+git commit -m "master work 1"
+git push -f
+git graph

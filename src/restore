@@ -1,0 +1,6 @@
+git switch master
+git branch -d feature
+git push origin -d feature
+git reset --hard HEAD~1
+git push -f
+git graph

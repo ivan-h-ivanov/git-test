@@ -1,0 +1,16 @@
+echo "this is file2.1" > file2.1
+git add .
+git commit -m File2.1
+git push
+echo "this is file2.2" > file2.2
+git add .
+git commit -m File2.2
+git push
+git reset --hard head~2
+echo "this is file3.1" > file3.1
+git add .
+git commit -m File3.1
+echo "this is file3.2" > file3.2
+git add .
+git commit -m File3.2
+git graph
